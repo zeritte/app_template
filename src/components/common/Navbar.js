@@ -8,7 +8,7 @@ const StatusHeight = StatusBar.currentHeight || 0;
 export const Navbar = props => {
   return (
     <ZView style={styles.container}>
-      <ZText>Event App</ZText>
+      <ZText>Navbar</ZText>
     </ZView>
   );
 };
