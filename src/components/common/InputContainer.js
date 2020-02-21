@@ -11,7 +11,7 @@ export const InputContainer = props => {
   let { extraScrollHeight } = props;
   extraScrollHeight = isNaN(extraScrollHeight) ? 0 : extraScrollHeight;
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
       {!props.noNavbar && (
         <Navbar
           left={props.navbarLeft}
