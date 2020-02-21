@@ -8,10 +8,10 @@ const _statusHeight = StatusBar.currentHeight || 0;
 const StatusHeight = Platform.OS === "android" ? _statusHeight : _statusHeight + 70;
 
 export const InputContainer = props => {
-  let { extraScrollHeight } = props;
+  let { extraScrollHeight, bgColor } = props;
   extraScrollHeight = isNaN(extraScrollHeight) ? 0 : extraScrollHeight;
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: bgColor ? bgColor : "white" }}>
       {!props.noNavbar && (
         <Navbar
           left={props.navbarLeft}

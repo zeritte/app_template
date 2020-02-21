@@ -3,8 +3,11 @@ import { SafeAreaView } from "react-native";
 import { Navbar } from "./Navbar";
 
 export const ZContainer = props => {
+  const { bgColor } = props;
   return (
-    <SafeAreaView style={[{ flex: 1, backgroundColor: "white" }, props.containerStyle]}>
+    <SafeAreaView
+      style={[{ flex: 1, backgroundColor: bgColor ? bgColor : "white" }, props.containerStyle]}
+    >
       {!props.noNavbar && (
         <Navbar
           left={props.navbarLeft}
