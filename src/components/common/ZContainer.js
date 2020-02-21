@@ -4,7 +4,7 @@ import { Navbar } from "./Navbar";
 
 export const ZContainer = props => {
   return (
-    <SafeAreaView style={[{ flex: 1 }, props.containerStyle]}>
+    <SafeAreaView style={[{ flex: 1, backgroundColor: "white" }, props.containerStyle]}>
       {!props.noNavbar && (
         <Navbar
           left={props.navbarLeft}
