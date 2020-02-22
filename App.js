@@ -26,10 +26,7 @@ export default function() {
     return Promise.all([cacheFonts]);
   };
 
-  const _handleLoadingError = error => {
-    console.warn(error);
-    captureError(error);
-  };
+  const _handleLoadingError = error => console.warn(error);
 
   const _handleFinishLoading = () => {
     setIsReady(true);
