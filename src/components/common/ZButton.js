@@ -16,7 +16,7 @@ export const ZButton = props => {
         },
         props.style
       ]}
-      disabled={props.loading}
+      disabled={props.loading || props.disabled}
     >
       {props.loading ? <Spinner size="small" style={{ height: 22 }} /> : props.children}
     </TouchableOpacity>
