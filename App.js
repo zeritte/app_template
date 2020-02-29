@@ -18,10 +18,10 @@ export default function() {
   const _loadResourcesAsync = async () => {
     // const cacheAssets = Asset.loadAsync();
     const cacheFonts = Font.loadAsync({
-      normalFont: require("./assets/Poppins-Regular.otf"),
-      boldFont: require("./assets/Poppins-Bold.otf"),
-      lightFont: require("./assets/Poppins-Light.otf"),
-      italicFont: require("./assets/Poppins-Italic.otf")
+      normalFont: require("./assets/fonts/Poppins-Regular.otf"),
+      boldFont: require("./assets/fonts/Poppins-Bold.otf"),
+      lightFont: require("./assets/fonts/Poppins-Light.otf"),
+      italicFont: require("./assets/fonts/Poppins-Italic.otf")
     });
     return Promise.all([cacheFonts]);
   };
